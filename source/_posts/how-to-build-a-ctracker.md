@@ -13,7 +13,7 @@ categories:
 
 In this post, we will learn how to build a simple competitor tracker that will send you daily / weekly / monthly screenshots of competitors websites or any website that you periodically visit to track how it's changing. For example, App Store reviews pages or feeds with low activity. We will also briefly explore how a GET API call works and its key elements. This tutorial is for beginners. If you're familiar with APIs and development in general feel free to jump to the TL;DR part at the end.
 
-### Prerequesites
+### Prerequisites
 
 To build this tracker you will need a [GetScreenshot](https://getscreenshot.rasterwise.com/) Screenshot API key and a cron-job-org account. We will be using GetScreenshot built-in mail functionality to send the captures to your own email account.
 
