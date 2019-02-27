@@ -6,7 +6,7 @@ description: This tutorial explains how to build a periodical screenshot tracker
 date: 2019-02-24 20:10:59
 categories: 
 - tutorial
-- getscreenshot
+
 ---
 
 ### Getting Started
@@ -79,11 +79,15 @@ Then click create cronjob.
 
 {% asset_img 'download.png' cron-job-2 %}
 
-Now you have to pick a name. Then, where it says url, paste the API call we composed at the beggining of this tutorial. Finally in the schedule section, pick a schedule that fits your tracking needs and save the cronjob.
+Now you have to pick a name. Then, where it says url, you need to paste the API call we composed at the beggining of this tutorial. However, cron-job-org has a length limit for URL, so you will need to shorten your API call with a URL shortener. We recommend [Google's Shortener](https://goo.gl/). After shortening the URL, you can copy the resulting short URL and past it in the URL field of cron-job-org like this:
 
-{% asset_img 'download-2.png' cron-job-3 %}
+{% asset_img 'download-1.png' cron-job-2 %}
 
-Success! At this point you should have a solid tracker that we will send periodic screenshots of any website directly into your inbox.
+Finally in the schedule section, pick a schedule that fits your tracking needs and save the cronjob.
+
+{% asset_img 'download-3.png' cron-job-3 %}
+
+Success! At this point you should have a solid tracker that we will send periodic screenshots of any website directly into your inbox. You will notice that in the execution history section of cron-job-org, these call will show up as failed. You can actually ignore this. As long as you're getting the emails, they are actually succeeding.
 
 You can replicate these steps to create as many trackers as you want and with whatever frequency you want. GetScreenshot gives you 2500 Screenshots a month, so you can build screenshot trackers for your co-workers and different projects.
 

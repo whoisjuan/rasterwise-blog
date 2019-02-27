@@ -4,10 +4,11 @@ title: Why you shouldn't build your own Puppeteer Screenshot API Solution
 permalink: why-you-shouldnt-build-your-own-puppeteer-screenshot-api-solution
 description: In this post we explain why building your own Puppeteer Screenshot API Solution could be inefficient and why you should consider a managed solution.
 date: 2019-02-26 21:19:04
-tags: 
-- getscreenshot 
-- puppeteer
+categories: 
+- puppeteer 
 ---
+
+{% asset_img 'download.png' puppeteer-screenshot-api %}
 
 Puppeteer is very quickly becoming the default solution that most developers choose to build web testing architecture for their apps. It's also becoming a very popular option to build parsers and services that depend on emulating browser sessions. One reason for Puppeteer's rising popularity is that until now most headless browser solutions weren't officially backed by browser vendors. Since Puppeeteer is the official Chrome headless browser solution by Google, it's not hard to understand why many developers are considering it over other popular solutions like Selenium and PhantomJS (officially abandoned/suspended). 
 
