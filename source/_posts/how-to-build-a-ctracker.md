@@ -11,9 +11,9 @@ categories:
 
 ### Getting Started
 
-In this post we will learn how to build a **simple competitor tracker** that will send you daily / weekly /  monthly screenshots of competitors websites or any website that you periodically visit to track how its changing. For example App Store review pages or feeds with low activity. We will also briefly explore how a GET API call works and its key elements. This tutorial is for begginers. If you're familiar with APIs and development in general feel free to jump to the **TL;DR** part at the end.
+In this post, we will learn how to build a simple competitor tracker that will send you daily / weekly / monthly screenshots of competitors websites or any website that you periodically visit to track how it's changing. For example, App Store reviews pages or feeds with low activity. We will also briefly explore how a GET API call works and its key elements. This tutorial is for beginners. If you're familiar with APIs and development in general feel free to jump to the TL;DR part at the end.
 
-### Pre-requesites
+### Prerequesites
 
 To build this tracker you will need a [GetScreenshot](https://getscreenshot.rasterwise.com/) Screenshot API key and a cron-job-org account. We will be using GetScreenshot built-in mail functionality to send the captures to your own email account.
 
@@ -26,7 +26,7 @@ And get your cron-job-org account [here](https://cron-job.org/en/signup/).
 
 After you subscribe and get your API key you will need to compose and API query call that will be used as the backbone of your tracker. GetScreenshot API is a RESTful API with a very simple and minimal setup. It's basically a simple URL that takes in some pieces of information to give you back what you're requesting.
 
-For the sake of this example we will assume that we want to screenshot the New York Times homepage in a daily basis. Here are the pieces that you will require to build the API call and adjust it to your screenshot needs:
+For the sake of this example we will assume that we want to screenshot the New York Times homepage on a daily basis. Here are the pieces that you will require to build the API call and adjust it to your screenshot needs:
 
 1) Base API URL: https://api.rasterwise.com
 2) API Key: You will receive this after subscribing.
@@ -47,7 +47,7 @@ Base API URL + `?apikey=` + API Key + `&url=` + URL of Website + `&email=` + You
 
 There's one more extra step that we will need to do to adjust our API call and make it usable by cron-job-org. We need to encode the url parameter of the API call.
 
-To to that you can to visit this [website](http://www.onlinewebtoolkit.com/url-encode-decode).
+To do that you can to visit this [website](http://www.onlinewebtoolkit.com/url-encode-decode).
 
 Where it says "Type/Paste/Upload your URL for URI Encode", paste all the URL you want to screenshot: 
 `https://nytimes.com`
@@ -67,7 +67,7 @@ Make sure to save this URL, since we will need it in the cron-job-org step.
 ---
 ### Setting Up The Recurrent Task (a.k.a: Cron Job)
 
-Now that we have our API call ready is time to use it in cron-job-org. This service allows you to put a schedule and perform actions programatically. These actions are known as cron jobs. In this case cron-job.org is going to make the API call that we just composed in a daily basis, just like if we were doing it from the browser. Every day we will receive an email with the attachment of a freshly taken screenshot.
+Now that we have our API call ready is time to use it in cron-job-org. This service allows you to put a schedule and perform actions programatically. These actions are known as cron jobs. In this case, cron-job.org is going to make the API call that we just composed on a daily basis, just like if we were doing it from the browser. Every day we will receive an email with the attachment of a freshly taken screenshot.
 
 The first thing you want to do is creating a cron-job-org free account. You can create it by visiting this [link](https://cron-job.org/en/signup/)
 
