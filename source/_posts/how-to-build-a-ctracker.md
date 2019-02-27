@@ -4,7 +4,9 @@ title: How to build a competitor tracker using GetScreenshot and cron-job.org
 permalink: how-to-build-a-competitor-tracker-using-getscreenshot-and-cron-job-org
 description: This tutorial explains how to build a periodical screenshot tracker, that allows you to get captures of your website or competitors websites and receive them in your email inbox.
 date: 2019-02-24 20:10:59
-categories: tutorial, getscreenshot
+categories: 
+- tutorial
+- getscreenshot
 ---
 
 ### Getting Started
