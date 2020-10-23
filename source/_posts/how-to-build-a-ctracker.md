@@ -17,7 +17,7 @@ In this post, we will learn how to build a simple competitor tracker that will s
 
 To build this tracker you will need a [GetScreenshot](https://getscreenshot.rasterwise.com/) Screenshot API key and a cron-job-org account. We will be using GetScreenshot built-in mail functionality to send the captures to your own email account.
 
-The first thing you want to do is subscribing and obtaining a GetScreenshot API. GetScreenshot costs 5 USD a month but you can enter the coupon FREEMONTH5 at the checkout to get the first month waived. You will also need a cron-job-org account which is free.
+The first thing you want to do is subscribing and obtaining a GetScreenshot API. GetScreenshot costs 5 USD a month. You will also need a cron-job-org account which is free.
 
 You can get your GetScreenshot API Key [here](https://getscreenshot.rasterwise.com/); 
 And get your cron-job-org account [here](https://cron-job.org/en/signup/).
